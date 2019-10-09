@@ -2,10 +2,53 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Sedgwick Ave Display';
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 header {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
+  height: 200vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+p{
+  color: white;
+  font-size: 25px;
+}
+p.label{
+  color: black;
+  font-size: 25px;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+ul{
+  text-align: center;
+}
+li{
+  list-style-type: none;
+}
+
+li a{
+  color: white;
+}
+
+img{
+  text-align: center;
+  width: 300px;
+}
+
+div.main{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://live.staticflickr.com/47/137596612_1547f5e0ab_b.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -38,7 +81,6 @@ header {
   opacity: 0.5;
   color: white;
   text-align: center;
-  vertical-align: middle;
   transition-duration: 0.3s;
 }
 
@@ -46,6 +88,11 @@ header {
   font-size: 55px;
   opacity: 1;
   transition-duration: 0.3s;
+}
+
+div.titlephrase{
+  margin-left: 205px;
+  margin-right: 205px
 }
 
 .button{
@@ -130,7 +177,6 @@ header {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 .logo img{
@@ -144,4 +190,36 @@ header {
 .logo img:hover{
   width: 55px;
   transition-duration: 0.3s;
+}
+
+section.shops{
+  background-color: white;
+  border-radius: 7px;
+  width: 230px;
+  height: 350px;
+  margin: 5px;
+  text-align: center;
+  color: black;
+  float: left;
+}
+
+ul.sub-nav-contents{
+  display: none;
+}
+
+.sub-nav:hover ul.sub-nav-contents{
+  display: block;
+}
+
+div.magazines{
+  list-style: none;
+  display: inline;
+}
+div.magazines section{
+    margin: 20px;
+}
+
+#main{
+  text-align: center;
+  color: white;
 }

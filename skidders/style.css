@@ -236,4 +236,20 @@ img.moving-gif-2{
 }
 
 
+th
+{
+  border: 5px
+  solid #8c6b48;
+  text-align: center;
+  margin: 20px auto;
+}
+
+td
+{
+  border: 5px
+  solid #8c6b48;
+  width: 350px;
+  text-align: center;
+  margin: 20px auto;
+}
 

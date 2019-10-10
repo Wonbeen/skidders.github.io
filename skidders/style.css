@@ -237,22 +237,3 @@ img.moving-gif-2{
 
 
 
-th
-{
-  border: 5px
-  solid #8c6b48;
-  text-align: center;
-  margin: 20px auto;
-  background-color: green;
-}
-
-td
-{
-  border: 5px
-  solid #8c6b48;
-  width: 300px;
-  text-align: center;
-  margin: 20px auto;
-  background-color: skyblue;
-}
-

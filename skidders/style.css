@@ -2,9 +2,10 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Sedgwick Ave Display';
+  height: 500vh;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -13,7 +14,7 @@ header {
   height: 200vh;
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -47,11 +48,19 @@ img{
   width: 300px;
 }
 
-div.main{
+div{
+  color: white;
+}
+
+div.stores#offline-stores{
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://live.staticflickr.com/47/137596612_1547f5e0ab_b.jpg");
-  height: 100vh;
+  height: 1500px;
   background-size: cover;
   background-position: center;
+}
+
+div.your-interests{
+  border: 1px solid white;
 }
 
 .row{
@@ -215,15 +224,78 @@ div.magazines{
   list-style: none;
   display: inline;
 }
+
 div.magazines section{
     margin: 20px;
 }
 
-#main{
+/* changed by Wonbeen on October 12. */
+div.sign-in-up, div.experience, div.your-interests{
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 10px solid white;
+}
+div.sign-in{
+  float: left;
+}
+div.sign-up{
+  float: left;
+}
+#profile{
+  text-align: center;
+}
+#sign-up{
   text-align: center;
   color: white;
 }
 
+#sign-up input.btn{
+  font-family: "Sedgwick Ave Display";
+  margin-bottom: 5px;
+  background: inherit;
+}
+
+#sign-up input.btn:hover{
+  background-color: white;
+  color: black;
+}
+
+#sign-in{
+  text-align: center;
+  color: white;
+}
+
+input.btn{
+  font-family: "Sedgwick Ave Display";
+  margin-top: 5px;
+  background: inherit;
+}
+input.btn:hover{
+  background-color: white;
+  color: black
+}
+
+/* change was made by Wonbeen* on September 5*/
+div.your-interests{
+  text-align: center;
+  border: 10px solid white;
+  height: relative;
+  margin-top, margin-bottom: 10px;
+}
+
+div.your-interests div{
+  text-align: center;
+  height: relative;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid white;
+  float: center;
+}
+
+#status-message{
+  font-family: "Sedgwick Ave Display";
+  background: white;
+}
 
 img.moving-gif-1{
   width: 50px;
@@ -253,3 +325,18 @@ td
   margin: 20px auto;
 }
 
+input#user-name, input#pw, input#country{
+  width: 70%;
+}
+
+textarea{
+  width: 70%;
+}
+
+div.experience{
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 10px solid white;
+}
